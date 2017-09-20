@@ -1,7 +1,7 @@
 Name: Profile WP-PostRatings;
 Version: 1.6;
 Support Core: 16.6.16;
-Description: Отображение рейтинга при использовании плагина WP-PostRatings в профиле пользователя. Для его работы нужен вышеназванный плагин;
+Description: Выводим в ЛК звездный рейтинг пользователя от плагина WP-PostRatings. Записи которые он оценивал;
 Author: Владимир Дружаев (Otshelnik-Fm);
 Author URI: http://across-ocean.otshelnik-fm.ru/;
 Add-on URI: https://codeseller.ru/?p=7178;
