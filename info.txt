@@ -1,5 +1,5 @@
 Name: Profile WP-PostRatings;
-Version: 1.6;
+Version: 2.0;
 Support Core: 16.6.16;
 Description: Выводим в ЛК звездный рейтинг пользователя от плагина WP-PostRatings. Записи которые он оценивал;
 Author: Владимир Дружаев (Otshelnik-Fm);

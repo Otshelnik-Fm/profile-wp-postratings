@@ -1,8 +1,11 @@
 <?php
 
+// запрет прямого обращения к файлу
+if ( !defined('ABSPATH') ) exit;
+
+
 // добавляем настройки в админке
 function ppr_admin_settings($options){
-
     $message = '';
     if (!function_exists('the_ratings')){ // если не активен WP-PostRatings
         $message = '<br/><span class="adm_warn adm_b16">У вас не активирован плагин WP-PostRatings!</span><br/>';
@@ -35,5 +38,4 @@ function ppr_admin_settings($options){
 
     return $options;
 }
-
 add_filter('admin_options_wprecall', 'ppr_admin_settings');
