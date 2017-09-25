@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ppr-rating v1.0\n"
+"POT-Creation-Date: 2017-09-22 01:51+0400\n"
+"PO-Revision-Date: 2017-09-25 00:49+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;__e;_x;_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-ppr-postratings.php:36
+msgctxt "plural"
+msgid "Rating"
+msgstr "Bewertet"
+
+#: inc/class-ppr-postratings.php:40
+msgid "Post Title"
+msgstr "der Titel der Platte"
+
+#: inc/class-ppr-postratings.php:42
+msgid "Date"
+msgstr "Datum"
+
+#: inc/class-ppr-postratings.php:84
+msgid "Not rated yet"
+msgstr "Noch nicht bewertet"
+
+#: inc/class-ppr-postratings.php:104
+msgid "Ratings"
+msgstr "Schätzt"
+
+#: inc/class-ppr-postratings.php:105
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+#: inc/class-ppr-postratings.php:109
+msgctxt "singular"
+msgid "Rating"
+msgstr "Bewertung"
+
+#: inc/class-ppr-postratings.php:110
+msgid "Title"
+msgstr "Header"
+
+#: inc/class-ppr-postratings.php:111
+msgid "Date and time"
+msgstr "Datum und Uhrzeit"
+
+#: inc/class-ppr-postratings.php:128
+msgid "No title"
+msgstr "Kein Titel"
+
+#: inc/class-ppr-postratings.php:145
+msgid "Go to publication"
+msgstr "Geh zu"
+
+#: inc/class-ppr-postratings.php:159
+msgid "Filter rating"
+msgstr "Filterbewertung"
+
+#: inc/class-ppr-postratings.php:162
+msgid "Rating"
+msgstr "Bewertung"
+
+#: inc/class-ppr-postratings.php:164
+msgid "Sorting"
+msgstr "Sortieren"
+
+#: inc/class-ppr-postratings.php:170
+msgid "Apply filter"
+msgstr "Filter anwenden"
+
+#: inc/class-ppr-postratings.php:180
+msgid "Reset filter"
+msgstr "Filter zurücksetzen"
+
+#: inc/class-ppr-postratings.php:190
+msgid "All"
+msgstr "Alle"
+
+#: inc/class-ppr-postratings.php:203
+msgctxt "by"
+msgid "Rating"
+msgstr "Nach Bewertung"
+
+#: inc/class-ppr-postratings.php:204
+msgctxt "by"
+msgid "Post Title"
+msgstr "Nach titel"
+
+#: inc/class-ppr-postratings.php:205
+msgctxt "by"
+msgid "Date"
+msgstr "Nach Datum"
+
+#: inc/class-ppr-postratings.php:215
+msgid "Descending"
+msgstr "Absteigend"
+
+#: inc/class-ppr-postratings.php:216
+msgid "Ascending"
+msgstr "Aufsteigende Reihenfolge"
+
+#: inc/class-ppr-postratings.php:227
+msgid "per page"
+msgstr "pro Seite"
+
+#: inc/settings.php:11
+msgid "You have not activated the plugin WP-PostRatings"
+msgstr "Sie haben das WP-PostRatings-Plug-In nicht aktiviert"
+
+#: inc/settings.php:12
+msgid "Go to"
+msgstr "Geh zu"
+
+#: inc/settings.php:13
+msgid "Go to the plugins page"
+msgstr "Gehen Sie auf die Seite Plugins"
+
+#: inc/settings.php:13
+msgid "plugins"
+msgstr "auf die Plugins Seite"
+
+#: inc/settings.php:13
+msgid "and activate WP-PostRatings"
+msgstr "und WP-PostRatings aktivieren"
+
+#: inc/settings.php:19
+msgid "Settings Profile WP-PostRatings"
+msgstr "WP-PostRatings Einstellungen"
+
+#: inc/settings.php:21
+msgid "Set a record rating"
+msgstr "Legen Sie eine Rekordwertung fest"
+
+#: inc/settings.php:23
+msgid "You use a five or ten-point rating system"
+msgstr "Sie verwenden ein Fünf- oder Zehn-Punkt-Rating-System"
+
+#: inc/settings.php:26
+msgid "points"
+msgstr "punkte"
+
+#: inc/settings.php:28
+msgid "Select your rating system. <br/> Default 5"
+msgstr "Wählen Sie Ihr Bewertungssystem aus. <br/> Default 5"
+
+#: inc/settings.php:29
+msgid "How many entries per page output"
+msgstr "Wie viele Einträge pro Seite Ausgabe"
+
+#: inc/settings.php:34
+msgid "Select a value. <br/> Default 20"
+msgstr "Wählen Sie einen Wert aus. <br/> Default 20"
+
+#: index.php:27
+msgid "Rating of publications"
+msgstr "Bewertung der Datensätze"
+
+#: index.php:49
+msgid ""
+"You have not activated the plugin <a href=\"https://wordpress.org/plugins/wp-"
+"postratings/\" title=\"Go to the repository WordPress\">WP-PostRatings</a>"
+msgstr ""
+"Sie haben <a href=\"https://wordpress.org/plugins/wp-postratings/\" title="
+"\"Share to Wordpress repository\">das WP-PostRatings-Plug-In</a> nicht "
+"aktiviert"

@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ppr-rating v1.0\n"
+"POT-Creation-Date: 2017-09-22 01:51+0400\n"
+"PO-Revision-Date: 2017-09-25 01:02+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;__e;_x;_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-ppr-postratings.php:36
+msgctxt "plural"
+msgid "Rating"
+msgstr "Calificación"
+
+#: inc/class-ppr-postratings.php:40
+msgid "Post Title"
+msgstr "Título de entrada"
+
+#: inc/class-ppr-postratings.php:42
+msgid "Date"
+msgstr "Fecha"
+
+#: inc/class-ppr-postratings.php:84
+msgid "Not rated yet"
+msgstr "Sin puntuar todavía"
+
+#: inc/class-ppr-postratings.php:104
+msgid "Ratings"
+msgstr "Estimaciones"
+
+#: inc/class-ppr-postratings.php:105
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: inc/class-ppr-postratings.php:109
+msgctxt "singular"
+msgid "Rating"
+msgstr "Clasificación"
+
+#: inc/class-ppr-postratings.php:110
+msgid "Title"
+msgstr "Encabezado"
+
+#: inc/class-ppr-postratings.php:111
+msgid "Date and time"
+msgstr "Fecha y hora"
+
+#: inc/class-ppr-postratings.php:128
+msgid "No title"
+msgstr "Sin título"
+
+#: inc/class-ppr-postratings.php:145
+msgid "Go to publication"
+msgstr "Ir a"
+
+#: inc/class-ppr-postratings.php:159
+msgid "Filter rating"
+msgstr "Filtrar la calificación"
+
+#: inc/class-ppr-postratings.php:162
+msgid "Rating"
+msgstr "Evaluación"
+
+#: inc/class-ppr-postratings.php:164
+msgid "Sorting"
+msgstr "Clasificación"
+
+#: inc/class-ppr-postratings.php:170
+msgid "Apply filter"
+msgstr "Aplicar filtro"
+
+#: inc/class-ppr-postratings.php:180
+msgid "Reset filter"
+msgstr "Restablecer filtro"
+
+#: inc/class-ppr-postratings.php:190
+msgid "All"
+msgstr "Todos"
+
+#: inc/class-ppr-postratings.php:203
+msgctxt "by"
+msgid "Rating"
+msgstr "Por calificación"
+
+#: inc/class-ppr-postratings.php:204
+msgctxt "by"
+msgid "Post Title"
+msgstr "Por título"
+
+#: inc/class-ppr-postratings.php:205
+msgctxt "by"
+msgid "Date"
+msgstr "Por fecha"
+
+#: inc/class-ppr-postratings.php:215
+msgid "Descending"
+msgstr "Descendente"
+
+#: inc/class-ppr-postratings.php:216
+msgid "Ascending"
+msgstr "Orden ascendente"
+
+#: inc/class-ppr-postratings.php:227
+msgid "per page"
+msgstr "por página"
+
+#: inc/settings.php:11
+msgid "You have not activated the plugin WP-PostRatings"
+msgstr "No ha activado el complemento WP-PostRatings"
+
+#: inc/settings.php:12
+msgid "Go to"
+msgstr "Ir a"
+
+#: inc/settings.php:13
+msgid "Go to the plugins page"
+msgstr "Ir a la página Plugins"
+
+#: inc/settings.php:13
+msgid "plugins"
+msgstr "a la página de complementos"
+
+#: inc/settings.php:13
+msgid "and activate WP-PostRatings"
+msgstr "y activar WP-PostRatings"
+
+#: inc/settings.php:19
+msgid "Settings Profile WP-PostRatings"
+msgstr "Configuración de WP-PostRatings"
+
+#: inc/settings.php:21
+msgid "Set a record rating"
+msgstr "Establecer una clasificación de registro"
+
+#: inc/settings.php:23
+msgid "You use a five or ten-point rating system"
+msgstr "Utiliza un sistema de calificación de cinco o diez puntos"
+
+#: inc/settings.php:26
+msgid "points"
+msgstr "puntos"
+
+#: inc/settings.php:28
+msgid "Select your rating system. <br/> Default 5"
+msgstr "Seleccione su sistema de calificación. <br/> Predeterminado 5"
+
+#: inc/settings.php:29
+msgid "How many entries per page output"
+msgstr "¿Cuántas entradas por página de salida"
+
+#: inc/settings.php:34
+msgid "Select a value. <br/> Default 20"
+msgstr "Seleccione un valor. <br/> Predeterminado 20"
+
+#: index.php:27
+msgid "Rating of publications"
+msgstr "Clasificación de los registros"
+
+#: index.php:49
+msgid ""
+"You have not activated the plugin <a href=\"https://wordpress.org/plugins/wp-"
+"postratings/\" title=\"Go to the repository WordPress\">WP-PostRatings</a>"
+msgstr ""
+"No ha activado el complemento <a href=\"https://wordpress.org/plugins/wp-"
+"postratings/\" title=\"Ir al Repositorio de WordPress\"> WP-PostRatings </a>"

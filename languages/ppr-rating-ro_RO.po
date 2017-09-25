@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ppr-rating v1.0\n"
+"POT-Creation-Date: 2017-09-22 01:51+0400\n"
+"PO-Revision-Date: 2017-09-22 20:07+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;__e;_x;_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-ppr-postratings.php:36
+msgctxt "plural"
+msgid "Rating"
+msgstr "Rating"
+
+#: inc/class-ppr-postratings.php:40
+msgid "Post Title"
+msgstr "Titlul înregistrării"
+
+#: inc/class-ppr-postratings.php:42
+msgid "Date"
+msgstr "Dată"
+
+#: inc/class-ppr-postratings.php:84
+msgid "Not rated yet"
+msgstr "Neevaluat încă"
+
+#: inc/class-ppr-postratings.php:104
+msgid "Ratings"
+msgstr "Evaluări"
+
+#: inc/class-ppr-postratings.php:105
+msgid "Sort by"
+msgstr "Sortați după"
+
+#: inc/class-ppr-postratings.php:109
+msgctxt "singular"
+msgid "Rating"
+msgstr "Evaluare"
+
+#: inc/class-ppr-postratings.php:110
+msgid "Title"
+msgstr "Antet"
+
+#: inc/class-ppr-postratings.php:111
+msgid "Date and time"
+msgstr "Data și ora"
+
+#: inc/class-ppr-postratings.php:128
+msgid "No title"
+msgstr "Niciun titlu"
+
+#: inc/class-ppr-postratings.php:145
+msgid "Go to publication"
+msgstr "Du-te la înregistrare"
+
+#: inc/class-ppr-postratings.php:159
+msgid "Filter rating"
+msgstr "Evaluare filtru"
+
+#: inc/class-ppr-postratings.php:162
+msgid "Rating"
+msgstr "Evaluare"
+
+#: inc/class-ppr-postratings.php:164
+msgid "Sorting"
+msgstr "Triere"
+
+#: inc/class-ppr-postratings.php:170
+msgid "Apply filter"
+msgstr "Aplicați filtrul"
+
+#: inc/class-ppr-postratings.php:180
+msgid "Reset filter"
+msgstr "Resetați filtrul"
+
+#: inc/class-ppr-postratings.php:190
+msgid "All"
+msgstr "Toate"
+
+#: inc/class-ppr-postratings.php:203
+msgctxt "by"
+msgid "Rating"
+msgstr "Prin rating"
+
+#: inc/class-ppr-postratings.php:204
+msgctxt "by"
+msgid "Post Title"
+msgstr "După titlu"
+
+#: inc/class-ppr-postratings.php:205
+msgctxt "by"
+msgid "Date"
+msgstr "După dată"
+
+#: inc/class-ppr-postratings.php:215
+msgid "Descending"
+msgstr "Descendent"
+
+#: inc/class-ppr-postratings.php:216
+msgid "Ascending"
+msgstr "Ordine ascendentă"
+
+#: inc/class-ppr-postratings.php:227
+msgid "per page"
+msgstr "pe pagină"
+
+#: inc/settings.php:11
+msgid "You have not activated the plugin WP-PostRatings"
+msgstr "Nu ați activat plug-in-ul WP-PostRatings"
+
+#: inc/settings.php:12
+msgid "Go to"
+msgstr "Du-te la"
+
+#: inc/settings.php:13
+msgid "Go to the plugins page"
+msgstr "Accesați pagina Pluginuri"
+
+#: inc/settings.php:13
+msgid "plugins"
+msgstr "la pagina de pluginuri"
+
+#: inc/settings.php:13
+msgid "and activate WP-PostRatings"
+msgstr "și să activați WP-PostRatings"
+
+#: inc/settings.php:19
+msgid "Settings Profile WP-PostRatings"
+msgstr "Setările WP-PostRatings"
+
+#: inc/settings.php:21
+msgid "Set a record rating"
+msgstr "Stabiliți o notă de înregistrare"
+
+#: inc/settings.php:23
+msgid "You use a five or ten-point rating system"
+msgstr "Utilizați un sistem de rating de cinci sau zece puncte"
+
+#: inc/settings.php:26
+msgid "points"
+msgstr "puncte"
+
+#: inc/settings.php:28
+msgid "Select your rating system. <br/> Default 5"
+msgstr "Selectați sistemul dvs. de rating. <br/> Implicit 5"
+
+#: inc/settings.php:29
+msgid "How many entries per page output"
+msgstr "Câte intrări pe pagină sunt afișate"
+
+#: inc/settings.php:34
+msgid "Select a value. <br/> Default 20"
+msgstr "Selectați o valoare. <br/> Implicit 20"
+
+#: index.php:27
+msgid "Rating of publications"
+msgstr "Evaluarea înregistrărilor"
+
+#: index.php:49
+msgid ""
+"You have not activated the plugin <a href=\"https://wordpress.org/plugins/wp-"
+"postratings/\" title=\"Go to the repository WordPress\">WP-PostRatings</a>"
+msgstr ""
+"Nu ați activat funcția <a href=\"https://wordpress.org/plugins/wp-"
+"postratings/\" title=\"Schare către depozitul WordPress\"> Plug-in WP-"
+"PostRatings </a>"
