@@ -12,7 +12,7 @@ class pprPostRatings {
     public $sort_asc_desc = 'DESC';         // направление сортировки
     public $get_by;
     public $sort_by = 'rating_timestamp';   // тип сортировки
-    public $sort_by_text = 'дате';          // текст длдя шапки
+    public $sort_by_text;                   // текст для шапки
     public $where_query;                    // параметры запроса
     public $filter_rating = 0;              // сортировка по кол-ву рейтинга
 
@@ -33,11 +33,13 @@ class pprPostRatings {
         }
         if($this->get_by == 'rating'){
             $this->sort_by = 'rating_rating';
-            $this->sort_by_text = 'рейтингу';
+            $this->sort_by_text = _x('Rating','plural', 'ppr-rating');
         }
         else if($this->get_by == 'posttitle'){
             $this->sort_by = 'rating_posttitle';
-            $this->sort_by_text = 'заголовку записи';
+            $this->sort_by_text = __('Post Title', 'ppr-rating');
+        } else {
+            $this->sort_by_text = __('Date', 'ppr-rating');
         }
 
         $this->filter_rating = isset($_GET['rating']) ? intval($_GET['rating']) : 0;
@@ -79,7 +81,7 @@ class pprPostRatings {
                 }
             $out .= '</div>';
         } else {
-            $out = '<div class="ppr_not_data">Не оценил ни одной записи</div>';
+            $out = '<div class="ppr_not_data">'.__('Not rated yet', 'ppr-rating').'</div>';
         }
 
         return $out;
@@ -99,14 +101,14 @@ class pprPostRatings {
     // верхняя часть
     private function head_block(){
         $out = '<div class="ppr_stats">';
-            $out .= '<span>Оценок: '.$this->total_ratings.'</span>';
-            $out .= '<span>Сортировка по: '.$this->sort_by_text.'</span>';
+            $out .= '<span>'.__('Ratings', 'ppr-rating').': '.$this->total_ratings.'</span>';
+            $out .= '<span>'.__('Sort by', 'ppr-rating').': '.$this->sort_by_text.'</span>';
         $out .= '</div>';
 
         $out .= '<div class="ppr_header_table">';
-            $out .= '<span>Рейтинг</span>';
-            $out .= '<span>Заголовок</span>';
-            $out .= '<span>Дата и время</span>';
+            $out .= '<span>'._x('Rating','singular', 'ppr-rating').'</span>';
+            $out .= '<span>'.__('Title', 'ppr-rating').'</span>';
+            $out .= '<span>'.__('Date and time', 'ppr-rating').'</span>';
         $out .= '</div>';
 
         return $out;
@@ -115,7 +117,6 @@ class pprPostRatings {
 
     // средняя. контент рейтинга
     private function rating_block($datas){
-        $months = array('Января','Февраля','Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября','Декабря');
         $ratings_image = get_option('postratings_image');
 
         $out = '<div id="ppr_table">';
@@ -124,11 +125,12 @@ class pprPostRatings {
                 $postid = intval($data['rating_postid']);
 
                 $posttitle = stripslashes($data['rating_posttitle']);
-                if(!$posttitle) $posttitle = '<small><del>Нет заголовка</del></small>';
+                if(!$posttitle) $posttitle = '<small><del>'.__('No title', 'ppr-rating').'</del></small>';
 
-                $date = $data['rating_timestamp'];
-                $vote_date = '<div class="ppr_ymd">'.date('j', $date).'&nbsp;'.$months[date('m', $date)-1].'&nbsp;'.date('Y', $date).'</div>';
-                $vote_date .= '<small>'.date('H:i', $date).'</small>';
+                $date = gmdate('Y-m-d H:i:s', $data['rating_timestamp']);
+
+                $vote_date = '<div class="ppr_ymd">'.mysql2date('j F Y', $date, true).'</div>';
+                $vote_date .= '<small>'.mysql2date('H:i', $date, true).'</small>';
 
                 $out .= '<div class="ppr_item">';
                     $out .= '<span class="ppr_star ppr_star_'.$this->five_or_ten.'">';
@@ -140,7 +142,7 @@ class pprPostRatings {
                             }
                         }
                     $out .= '</span>';
-                    $out .= '<span class="ppr_title"><a title="Перейти" href="/?p='.$postid.'">'.$posttitle.'</a></span>';
+                    $out .= '<span class="ppr_title"><a title="'.__('Go to publication', 'ppr-rating').'" href="/?p='.$postid.'">'.$posttitle.'</a></span>';
                     $out .= '<span class="ppr_date">'.$vote_date.'</span>';
                 $out .= '</div>';
             }
@@ -154,18 +156,18 @@ class pprPostRatings {
     private function footer_filter(){
         $lk_url = rcl_format_url(get_author_posts_url($this->user_lk),'tab_rayt');
 
-        $out = '<div class="ppr_title_filter">Фильтр рейтинга:</div>';
+        $out = '<div class="ppr_title_filter">'.__('Filter rating', 'ppr-rating').':</div>';
         $out .= '<form action="'.$lk_url.'" method="get">';
             $out .= '<div class="ppr_selects">';
-                $out .= '<span>Оценка:</span>';
+                $out .= '<span>'.__('Rating', 'ppr-rating').':</span>';  //Оценка
                 $out .= $this->select_rating();
-                $out .= '<span>Сортировка:</span>';
+                $out .= '<span>'.__('Sorting', 'ppr-rating').':</span>'; //Сортировка
                 $out .= $this->select_by();
                 $out .= $this->select_order();
                 $out .= $this->select_in_page();
             $out .= '</div>';
 
-            $out .= '<div style="text-align:right;"><input type="submit" value="Применить" class="recall-button"/></div>';
+            $out .= '<div style="text-align:right;"><input type="submit" value="'.__('Apply filter', 'ppr-rating').'" class="recall-button"/></div>';
             $out .= '<input type="hidden" name="tab" value="tab_rayt" />';
 
             if( rcl_get_option('view_user_lk_rcl') ==1 ){ // если кабинет выводится через шорткод
@@ -175,7 +177,7 @@ class pprPostRatings {
         $out .= '</form>';
 
         if( isset($_GET['order']) ){ // была фильтрация
-            $out .= '<div class="ppr_filter_reset""><a href="'.$lk_url.'" class="recall-button">Сбросить фильтр</a></div>';
+            $out .= '<div class="ppr_filter_reset""><a href="'.$lk_url.'" class="recall-button">'.__('Reset filter', 'ppr-rating').'</a></div>';
         }
 
         return '<div class="ppr_filter">'.$out.'</div>';
@@ -185,7 +187,7 @@ class pprPostRatings {
     // селекты сортировки по оценкам 1 до 5-ти, или 1 до 10-ти
     private function select_rating(){
         $out = '<select name="rating">';
-            $out .= '<option value="">Все</option>';
+            $out .= '<option value="">'.__('All', 'ppr-rating').'</option>';
             for ($num = 1; $num <= $this->five_or_ten; $num++){
                 $out .= '<option value="'.$num.'"' . selected($this->filter_rating, $num, false) . '>'.$num.'</option>';
             }
@@ -198,9 +200,9 @@ class pprPostRatings {
     // селекты сортировки по типу
     private function select_by(){
         $out = '<select name="by">';
-            $out .= '<option value="rating"' . selected($this->sort_by, 'rating_rating', false) . '>По рейтингу</option>';
-            $out .= '<option value="posttitle"' . selected($this->sort_by, 'rating_posttitle', false) . '>По заголовку</option>';
-            $out .= '<option value="date"' . selected($this->sort_by, 'rating_timestamp', false) . '>По дате</option>';
+            $out .= '<option value="rating"' . selected($this->sort_by, 'rating_rating', false) . '>'._x('Rating','by', 'ppr-rating').'</option>';
+            $out .= '<option value="posttitle"' . selected($this->sort_by, 'rating_posttitle', false) . '>'._x('Post Title','by', 'ppr-rating').'</option>';
+            $out .= '<option value="date"' . selected($this->sort_by, 'rating_timestamp', false) . '>'._x('Date','by', 'ppr-rating').'</option>';
         $out .= '</select>';
 
         return $out;
@@ -210,8 +212,8 @@ class pprPostRatings {
     // селекты сортировки по направлению
     private function select_order(){
         $out = '<select name="order">';
-            $out .= '<option value="desc"' . selected($this->sort_asc_desc, 'DESC', false) . '>По убыванию</option>';
-            $out .= '<option value="asc"' . selected($this->sort_asc_desc, 'ASC', false) . '>По возрастанию</option>';
+            $out .= '<option value="desc"' . selected($this->sort_asc_desc, 'DESC', false) . '>'.__('Descending', 'ppr-rating').'</option>';
+            $out .= '<option value="asc"' . selected($this->sort_asc_desc, 'ASC', false) . '>'.__('Ascending', 'ppr-rating').'</option>';
         $out .= '</select>';
 
         return $out;
@@ -222,7 +224,7 @@ class pprPostRatings {
     private function select_in_page(){
         $out = '<select name="in_page">';
             for($i=10; $i <= 100; $i+=10){
-                $out .= '<option value="'.$i.'"' . selected($this->per_page, $i, false) . '>'.$i.' на страницу</option>';
+                $out .= '<option value="'.$i.'"' . selected($this->per_page, $i, false) . '>'.$i.' '.__('per page', 'ppr-rating').'</option>';
             }
         $out .= '</select>';
 

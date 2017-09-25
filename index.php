@@ -24,7 +24,7 @@ if(!is_admin()){
 function ppr_tab(){
     $tab_data = array(
         'id' => 'tab_rayt',
-        'name' => 'Рейтинг записей',
+        'name' => __('Rating of publications', 'ppr-rating'),
         'supports' => array('ajax', 'cache'),
         'public' => 1,
         'icon' => 'fa-bar-chart',
@@ -46,7 +46,7 @@ add_action('init', 'ppr_tab');
 // коллбек. ф-ция принимает id кабинета
 function ppr_content_profile_rating($user_lk){
     $block_wprecall = '<div class="ppr_warning">'
-            . 'У вас не активирован плагин <a href="https://wordpress.org/plugins/wp-postratings/" title="Перейти в репозиторий вордпресс">WP-PostRatings</a>'
+            . __('You have not activated the plugin <a href="https://wordpress.org/plugins/wp-postratings/" title="Go to the repository WordPress">WP-PostRatings</a>', 'ppr-rating')
             . '</div>';
     if(function_exists('the_ratings')){         // если используется плагин wp_postrating стартуем
         $obj = new pprPostRatings($user_lk);
@@ -63,4 +63,11 @@ function ppr_add_page_link_attributes($attrs){
 
     return $attrs;
 }
+
+
+// подключим перевод
+function ppr_textdomain(){
+    load_textdomain( 'ppr-rating', rcl_addon_path(__FILE__).'/languages/ppr-rating-'.get_locale().'.mo' );
+}
+add_action('plugins_loaded', 'ppr_textdomain',10);
 

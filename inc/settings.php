@@ -8,32 +8,32 @@ if ( !defined('ABSPATH') ) exit;
 function ppr_admin_settings($options){
     $message = '';
     if (!function_exists('the_ratings')){ // если не активен WP-PostRatings
-        $message = '<br/><span class="adm_warn adm_b16">У вас не активирован плагин WP-PostRatings!</span><br/>';
-        $message .= 'Перейдите <a href="' . home_url('/wp-admin/plugins.php') . '" '
-                . 'title="Перейти на страницу плагинов">на страницу плагинов</a> и активируйте WP-PostRatings<br/><hr><br/>';
+        $message = '<br/><span class="adm_warn adm_b16">'.__('You have not activated the plugin WP-PostRatings', 'ppr-rating').'!</span><br/>';
+        $message .= __('Go to', 'ppr-rating').' <a href="' . home_url('/wp-admin/plugins.php') . '" '
+                . 'title="'.__('Go to the plugins page', 'ppr-rating').'">'.__('plugins', 'ppr-rating').'</a> '.__('and activate WP-PostRatings', 'ppr-rating').'<br/><hr><br/>';
     }
 
     $opt = new Rcl_Options(__FILE__);
 
     $options .= $opt->options(
-            'Настройки Profile WP-PostRatings', $opt->option_block(
-                    array(
-                        $opt->title('Установить рейтинг записей:'),
-                        '<div>' . $message . '</div>', // предупреждение - нет WP-PostRatings
-                        $opt->label('<br/>Вы используете пяти или десятибальную систему рейтинга?'),
-                        $opt->option('select', array(
-                            'name' => 'nmbr_rating',
-                            'options' => array(5 => '5 баллов', 10 => '10 баллов',)
-                        )),
-                        $opt->notice('Выберите вашу систему рейтинга.<br/>По умолчанию 5'),
-                        $opt->label('<br/>Сколько записей на страницу выводить?'),
-                        $opt->option('select', array(
-                            'name' => 'nmbr_per_page',
-                            'options' => array(10 => '10', 20 => '20', 30 => '30', 40 => '40', 50 => '50', 60 => '60', 70 => '70', 80 => '80', 90 => '90', 100 => '100',)
-                        )),
-                        $opt->notice('Выберите значение.<br/>По умолчанию 20'),
-                    )
+        __('Settings Profile WP-PostRatings', 'ppr-rating'), $opt->option_block(
+            array(
+                $opt->title(__('Set a record rating', 'ppr-rating').':'),
+                '<div>' . $message . '</div>', // предупреждение - нет WP-PostRatings
+                $opt->label('<br/>'.__('You use a five or ten-point rating system', 'ppr-rating').'?'),
+                $opt->option('select', array(
+                    'name' => 'nmbr_rating',
+                    'options' => array(5 => '5 '.__('points', 'ppr-rating'), 10 => '10 '.__('points', 'ppr-rating'),)
+                )),
+                $opt->notice(__('Select your rating system. <br/> Default 5', 'ppr-rating')),
+                $opt->label('<br/>'.__('How many entries per page output', 'ppr-rating').'?'),
+                $opt->option('select', array(
+                    'name' => 'nmbr_per_page',
+                    'options' => array(10 => '10', 20 => '20', 30 => '30', 40 => '40', 50 => '50', 60 => '60', 70 => '70', 80 => '80', 90 => '90', 100 => '100',)
+                )),
+                $opt->notice(__('Select a value. <br/> Default 20', 'ppr-rating')),
             )
+        )
     );
 
     return $options;
