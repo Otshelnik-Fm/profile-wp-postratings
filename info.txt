@@ -1,7 +1,7 @@
 Name: Profile WP-PostRatings;
-Version: 2.0;
-Support Core: 16.6.16;
+Version: 2.0.1;
+Support Core: 16.15.0;
 Description: Выводим в ЛК звездный рейтинг пользователя от плагина WP-PostRatings. Записи которые он оценивал;
 Author: Владимир Дружаев (Otshelnik-Fm);
-Author URI: http://across-ocean.otshelnik-fm.ru/;
+Author URI: https://otshelnik-fm.ru/;
 Add-on URI: https://codeseller.ru/?p=7178;

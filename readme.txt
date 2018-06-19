@@ -17,6 +17,11 @@
 
 
 == Changelog ==
+= 2018-06-19 =
+v2.0.1
+* Работа с WP-Recall v.16.15 и WP-PostRatings версии 1.85
+
+
 = 2017-09-25 =
 v2.0
 * Рефакторинг. Дополнение полностью переписано
@@ -45,7 +50,7 @@ v1.4
 = 2014-11-08 =
 v1.3
 * Поддержка WP-Recall v9.10
-* Поддерживается пагинация от плагина wp-pagenavi
+* Поддерживается пагинация от плагина wp-pagenavi (upd: удалено с версии 2.0)
 * Появились настройки в админке:  "WP-Recall" -> "Настройки" -> "Настройки Profile Wp-PostRating"
 * Возможность установить пяти или десятибальную шкалу рейтинга (ту которую вы используете на своем сайте)
 * И настроить вывод записей рейтинга на странице от 10 до 100 с шагом 10
@@ -62,7 +67,7 @@ v1.0
 == Прочее ==
 
 * Поддержка осуществляется в рамках текущего функционала дополнения
-* При возникновении проблемы, создайте соотвествующую тему на <a href="https://codeseller.ru/forum/product-7178/" target="_blank">форуме поддержки</a> товара
+* При возникновении проблемы, создайте соотвествующую тему на форуме поддержки товара
 * Если вам нужна доработка под ваши нужды - вы можете обратиться ко мне в <a href="https://codeseller.ru/author/otshelnik-fm/?tab=chat" target="_blank">ЛС</a> с техзаданием на платную доработку.
 
-Полный список моих работ опубликован <a href="http://across-ocean.otshelnik-fm.ru/" target="_blank">на моем демо-сайте</a> и в каталоге магазина <a href="https://codeseller.ru/author/otshelnik-fm/?tab=publics&subtab=type-products" target="_blank">CodeSeller.ru</a>
+Все мои работы опубликованы <a href="https://otshelnik-fm.ru/?p=2562" target="_blank">на моём сайте</a> и в каталоге магазина <a href="https://codeseller.ru/author/otshelnik-fm/?tab=publics&subtab=type-products" target="_blank">CodeSeller.ru</a>
