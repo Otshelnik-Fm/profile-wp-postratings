@@ -19,6 +19,12 @@ You can launch the update by clicking the link in the new version banner (if it'
 
 
 == Changelog ==
+= 2020-09-21 =
+v2.1.0
+* Working with WP-Recall v.16.24.0 and WP-PostRatings version 1.89
+* Switching to API WP-Recall notifications, API WP-Recall buttons, and API WP-Recall tables - reduced the css file by several times
+
+
 = 2018-06-19 =
 v2.0.1
 * Working with WP-Recall v.16.15 and WP-PostRatings version 1.85

@@ -17,6 +17,12 @@
 
 
 == Changelog ==
+= 2020-09-21 =
+v2.1.0
+* Работа с WP-Recall v.16.24.0 и WP-PostRatings версии 1.89
+* Переход на апи реколл нотисов, апи реколл кнопок и апи таблиц реколл - позволило сократить в разы css файл
+
+
 = 2018-06-19 =
 v2.0.1
 * Работа с WP-Recall v.16.15 и WP-PostRatings версии 1.85
@@ -70,4 +76,4 @@ v1.0
 * При возникновении проблемы, создайте соотвествующую тему на форуме поддержки товара
 * Если вам нужна доработка под ваши нужды - вы можете обратиться ко мне в <a href="https://codeseller.ru/author/otshelnik-fm/?tab=chat" target="_blank">ЛС</a> с техзаданием на платную доработку.
 
-Все мои работы опубликованы <a href="https://otshelnik-fm.ru/?p=2562" target="_blank">на моём сайте</a> и в каталоге магазина <a href="https://codeseller.ru/author/otshelnik-fm/?tab=publics&subtab=type-products" target="_blank">CodeSeller.ru</a>
+Все мои работы опубликованы <a href="https://otshelnik-fm.ru/?p=2562&utm_source=free-addons&utm_medium=addon-description&utm_campaign=profile-wp-postratings&utm_content=codeseller.ru&utm_term=all-my-addons" target="_blank">на моём сайте</a> и в каталоге магазина <a href="https://codeseller.ru/author/otshelnik-fm/?tab=publics&subtab=type-products" target="_blank">CodeSeller.ru</a>
